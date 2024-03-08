@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean class="springcoremobconsructor.mobile" name="mob">
+    <constructor-arg><value>VIVO</value></constructor-arg>
+    <constructor-arg><value>Android</value></constructor-arg>
+    <constructor-arg ref="s5" />    
+        </bean>
+        
+        <bean class="springcoremobconsructor.sim" name="s5">
+<constructor-arg><value>prepaid</value></constructor-arg>
+<constructor-arg><value>Vodaphone</value></constructor-arg>
+<constructor-arg><value>1234567890</value></constructor-arg>        
+        
+        </bean>
+        
+        
+    
+   
+   
+    
+    
+    </beans>
+    
+    

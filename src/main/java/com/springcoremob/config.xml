@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean class="com.springcoremob.mobile" name="mob">  
+     <property name="name" ><value>"Iphone"</value></property>  
+    <property name="generation" ><value>11</value> </property>
+   
+    <property name="price" ><value>75000</value></property> 
+    
+     </bean>
+    
+    <bean class="com.springcoremob.mobile" name="mob2">    
+    <property name="name" value="Iphone"/>
+    <property name="generation" value="12" />
+    <property name="price" value="110000" />
+    
+    
+    </bean>    
+    <bean class="com.springcoremob.mobile" name="mob3" p:name="VIVO" p:generation="1921" p:price="25000">
+       </bean>
+           
+   
+    </beans>
+    
+    
